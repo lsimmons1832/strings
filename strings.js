@@ -10,14 +10,11 @@ function reversal(array){
 	return reverseInput;
 }
 console.log(reverseInput)
-button.addEventListener("click", reversal); //tell me what click event does after comma
 
-
-
-
-// function alphabits() {
-
-// }
+function alphabits(array) {
+	var string = array.split('').sort().join('');
+	return string;
+}
 
 // function palindrome() {
 
@@ -27,3 +24,4 @@ button.addEventListener("click", reversal); //tell me what click event does afte
 // reversal(testString);
 // alphabits(testString);
 // palindrome(testString);
+button.addEventListener("click", reversal); //tell me what click event does after comma
