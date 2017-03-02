@@ -1,24 +1,16 @@
-var userInput = document.getElementById('textInput').value;
+var userInput = document.getElementById("textInput");
+var button = document.getElementById("validate"),
 //console.log("userInput", userInput);
 
-// var button = document.getElementById('validate');
+//var button = document.getElementById('validate');
 
-// button.addEventListener("click", reversal); //tell me what click event does after comma
 
-// function reversal(array) {
-// 	getInput = document.getElementById('textInput').value;
-// 	push(array[i].split("").reverse().join(""));
-// }
 function reversal(array){
-	var reverseInput = [];//userInput.split (" ");;
-	for (var i = 0; i < array.length; i++) {
-		reverseInput.push(array[i].split("").reverse().join(""));
-	}
-	console.log(reverseInput);
+	var reverseInput = array.split('').reverse().join('');
+	return reverseInput;
 }
-
-reversal(userInput);
-
+console.log(reverseInput)
+button.addEventListener("click", reversal); //tell me what click event does after comma
 
 
 
